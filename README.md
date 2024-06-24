@@ -4,11 +4,13 @@ This repository collects the documentation from multiple repositories into one d
 
 This is an example of using [`mkdocs-monorepo-plugin`](https://github.com/backstage/mkdocs-monorepo-plugin) to display the docs of several repositories in one mkdocs deployment. 
 
-## Local Development 
+## Quick start
 
-- Install requirements with `pip install -r requirements.txt` 
-- Run `mkdocs serve` 
-- See the docs at `localhost:8000`
+1. Install requirements with `pip install -r requirements.txt` 
+2. Run `just update-docs` to install the docs from the repos in `repos.yml` on your local machine 
+3. Run `just build` to rebuild the docs 
+4. Run `just docs` to serve the docs 
+5. View the docs at `localhost:8000`
 
 ### Links 
 
@@ -29,11 +31,11 @@ Example `pyproject.toml`:
 dependencies = ["django>=3.2", "mkdocs", "mkdocs-material", "mkdocs-monorepo-plugin"]
 ```
 
-Then run `pip install .` in your virtual environment. 
+Then run `pip install .` in your virtual environment to install those packages. 
 
-2. Add a `mkdoc.yml` file at the root level.  
+2. Add a `mkdoc.yml` file at the root level of the repo. 
 
-Example `mkdoc.yml`: 
+Example `mkdoc.yml` in `django-email-relay`: 
 
 ```yaml
 site_name: django-email-relay
@@ -53,7 +55,6 @@ The important section is the `nav` element. See [Adding Pages](https://www.mkdoc
 > 📌 For each repo you add, you will need to set up the navigation via this `mkdocs.yml` file.
 
 3. Commit the result to that repo. 
-
 
 4. Come back to this repo, `central-docs`. Add the repo to `repos.yml`:
 
