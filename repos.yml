@@ -1,0 +1,7 @@
+repos:
+  - name: django-email-relay
+    url: https://github.com/williln/django-email-relay.git
+    docs_path: docs/
+  - name: wagtail-heroicons
+    url: https://github.com/williln/wagtail-heroicons.git
+    docs_path: docs/

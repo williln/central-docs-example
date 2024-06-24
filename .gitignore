@@ -1,0 +1,5 @@
+.gitmodules
+django-email-relay/
+wagtail-heroicons/
+temp_docs/
+site/
