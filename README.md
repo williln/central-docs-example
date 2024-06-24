@@ -12,6 +12,10 @@ This is an example of using [`mkdocs-monorepo-plugin`](https://github.com/backst
 4. Run `just docs` to serve the docs 
 5. View the docs at `localhost:8000`
 
+Example result: 
+![Screenshot 2024-06-24 at 4 28 26 PM](https://github.com/williln/central-docs-example/assets/2286304/cbb35917-2553-4232-a0c7-0a0acd552d7a)
+![Screenshot 2024-06-24 at 4 28 43 PM](https://github.com/williln/central-docs-example/assets/2286304/a937478d-33f9-4b9a-8845-e7d078791892)
+
 ### Links 
 
 - [backstage/mkdocs-monorepo-plugin](https://github.com/backstage/mkdocs-monorepo-plugin/tree/master)
