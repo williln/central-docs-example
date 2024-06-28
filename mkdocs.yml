@@ -1,12 +1,11 @@
-site_name: Centralized Docs 
-repo_name: 'williln/central-docs'
-repo_url: 'https://github.com/williln/central-docs'
-
+site_name: Centralized Docs
+repo_name: "williln/central-docs"
+repo_url: "https://github.com/williln/central-docs"
 
 nav:
-  - Intro: 'index.md'
-  - django-email-relay: '!include ./django-email-relay/mkdocs.yml'
-  - wagtail-heroicons: '!include ./wagtail-heroicons/mkdocs.yml'
+  - Intro: "index.md"
+  - django-email-relay: "!include ./django-email-relay/mkdocs.yml"
+  - wagtail-heroicons: "!include ./wagtail-heroicons/mkdocs.yml"
 
 plugins:
   - monorepo
@@ -14,18 +13,17 @@ plugins:
 
 theme:
   name: material
-  language: 'en'
+  language: "en"
   font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
+    text: "Roboto"
+    code: "Roboto Mono"
   palette:
     - scheme: default
       primary: blue grey
       accent: indigo
 
 extra:
-  repo_icon: 'github'
-
+  repo_icon: "github"
 
 markdown_extensions:
   - toc:
