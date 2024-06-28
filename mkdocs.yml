@@ -10,24 +10,23 @@ nav:
 
 plugins:
   - monorepo
+  - search
 
 theme:
   name: material
   language: 'en'
   font:
-    text: 'Circular'
-    code: 'Inconsolata'
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: indigo
 
 extra:
   repo_icon: 'github'
 
 
 markdown_extensions:
-  - admonition
-  - codehilite:
-      linenums: true
-  - pymdownx.superfences
   - toc:
       permalink: true
-
-
