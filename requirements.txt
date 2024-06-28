@@ -2,6 +2,3 @@ mkdocs
 mkdocs-material
 mkdocs-monorepo-plugin
 mkdocs-include-markdown-plugin
-
-# Formatting
-pre-commit

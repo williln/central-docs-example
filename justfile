@@ -22,6 +22,10 @@ update-docs:
 shell:
     docker-compose run --rm docs /bin/bash
 
-# Run pre-commit hooks
+# Run pre-commit hooks on all files
 pre-commit-all:
-    docker-compose run --rm docs pre-commit run --all-files
+    pre-commit run --all-files
+
+# Run pre-commit hooks
+pre:
+    pre-commit run .

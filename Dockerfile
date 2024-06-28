@@ -17,6 +17,3 @@ RUN python -m pip install --upgrade pip \
     && python -m pip install -r requirements.txt
 
 COPY . /app/
-
-# Install pre-commit hooks
-RUN pre-commit install
