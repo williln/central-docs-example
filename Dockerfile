@@ -1,4 +1,4 @@
-FROM python:3.11-slim as base
+FROM python:3.12-slim as base
 ENV PYTHONPATH /app
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
@@ -17,3 +17,6 @@ RUN python -m pip install --upgrade pip \
     && python -m pip install -r requirements.txt
 
 COPY . /app/
+
+# Install pre-commit hooks
+RUN pre-commit install

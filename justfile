@@ -18,6 +18,10 @@ down:
 update-docs:
     docker-compose run --rm docs python3 update_docs.py
 
-# Open a shell in the container
+# Open a shell in the docs container
 shell:
     docker-compose run --rm docs /bin/bash
+
+# Run pre-commit hooks
+pre-commit-all:
+    docker-compose run --rm docs pre-commit run --all-files
