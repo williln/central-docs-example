@@ -1,6 +1,6 @@
-# Welcome to Central Docs 
+# Welcome to Central Docs
 
-## Project Documentation 
+## Project Documentation
 
 - [django-email-relay](./django-email-relay/)
 - [wagtail-heroicons](./wagtail-heroicons/)
